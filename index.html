@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">Michael Sinaga</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="#" class="active" style="--navAni:1">Home</a></li>
+                <li><a href="#" style="--navAni:2">About</a></li>
+                <li><a href="Skill.html" style="--navAni:3">Skills</a></li>
+                <li><a href="Proyek.html" style="--navAni:4">proyek</a></li>
+                <li><a href="Contact.html" style="--navAni:5">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+
+    <section class="container">
+        <div class="main">
+            <div class="images">
+                <img src="img/gbr12.jpg" alt="" class="img-w">
+                <span class="bg-effect-1">
+                    <span class="bg-effect-1"></span>
+
+                </span>
+            </div>
+            <div class="detail">
+                <h3>Hi, I'm</h3>
+                <h1><span style="color:#f9532d;">Michael </span> Sinaga</h1>
+                <p>Halo, saya adalah mahasiswa jurusan Sistem Informasi semester VII di Universitas Putera Batam. Saya
+                    memiliki ketertarikan yang mendalam dalam pengembangan web dan telah mengikuti berbagai pelatihan
+                    dan kursus untuk meningkatkan keterampilan saya.
+                    Pada bulan Oktober 2023, saya mengikuti kursus Menjadi Front-End Web Developer Expert di Dicoding
+                    Academy. Melalui kursus ini, saya mempelajari dasar-dasar pengembangan front-end web, termasuk HTML,
+                    CSS, dan JavaScript. Sebagai proyek akhir, saya berhasil membangun sebuah web artikel dan Web
+                    Bookself Apss.
+                    Selain itu, saya juga memiliki pengalaman dalam menganalisis dan memperbaiki tampilan situs web
+                    pemerintah. Pengalaman ini saya dapatkan dari tugas mata kuliah Pemograman Web. Dalam tugas
+                    tersebut, saya menganalisis situs web pemerintah dan mengidentifikasi area-area yang dapat
+                    ditingkatkan dari segi tampilan dan user experience.
+                    Saya juga memiliki pengalaman dalam membangun Web E-Commerce Thirfting menggunakan teknologi
+                    HTML,CSS,PHP dan MySql. Web ini saya buat sebagai ujian akhir mata kuliah Pemograman Web. Web ini
+                    memungkinkan pengguna untuk membeli pakaian bekas secara online.
+                    Selain pelatihan dan kursus, saya juga pernah mengikuti pelatihan pengembangan web yang dilaksanakan
+                    pada bulan Maret 2023. Pelatihan ini memberikan saya pemahaman yang lebih mendalam tentang
+                    pengembangan web . Saya berharap pengalaman dan keterampilan saya dalam pengembangan web dapat
+                    bermanfaat bagi perusahaan Anda. Saya siap untuk belajar dan berkembang bersama tim Anda untuk
+                    menciptakan produk-produk web yang berkualitas tinggi.
+                </p>
+               
+        </div>
+    </section>
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M7b4YCx57h2LqU5oH4WUyeq3PXHBQ8Hdoy7h4z9x0D6"
+        crossorigin="anonymous"></script>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+        <footer>
+        <p>Contact information: michaelsinaga104@gmail.com</p>
+    </footer>
+</body>
+
+</html>

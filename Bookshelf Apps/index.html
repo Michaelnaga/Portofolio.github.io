@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Bookshelf App</h1>
+
+    <div class="bookshelves">
+        <div class="shelf" id="unfinishedShelf">
+            <h2>Belum selesai dibaca</h2>
+            <ul id="unfinishedList"></ul>
+        </div>
+        <div class="shelf" id="finishedShelf">
+            <h2>Selesai dibaca</h2>
+            <ul id="finishedList"></ul>
+        </div>
+    </div>
+
+    <div class="addBook">
+        <h2>Tambahkan Buku</h2>
+        <input type="text" id="title" placeholder="Judul">
+        <input type="text" id="author" placeholder="Penulis">
+        <input type="number" id="year" placeholder="Tahun">
+        <input type="checkbox" id="isComplete">
+        <label for="isComplete">Selesai dibaca</label>
+        <button onclick="addBook()">Tambahkan</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Michael Sinaga.</p>
+        <ul class="social-media">
+            <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+
+        </ul>
+    </div>
+</footer>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">Michael Sinaga</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="#" class="active" style="--navAni:1">Home</a></li>
+                <li><a href="index.html" style="--navAni:2">About</a></li>
+                <li><a href="Skill.html" style="--navAni:3">Skills</a></li>
+                <li><a href="Proyek.html" style="--navAni:4">proyek</a></li>
+                <li><a href="Contact.html" style="--navAni:5">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+    <section class="container">
+        <h1 style="font-size: 48px; margin-bottom: 20px;">Proyek</h1>
+        <div class="skills-container">
+            <div class="project-item">
+                <h2 style="margin-top: 10px;">Web Bookshelf Apps</h2>
+                <p style="font-style: italic; color: #888;">Explore my Bookshelf App project</p>
+                <a href="Bookshelf Apps/index.html" style="text-decoration: none; color: inherit;">
+                    <img src="img/gbr1.JPG" alt="Bookshelf Apps Image"
+                        style="width: 100%; height: auto; border-radius: 8px;">
+
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="skills-container">
+            <div class="project-item">
+                <h2 style="margin-top: 10px;">Web Artikel</h2>
+                <p style="font-style: italic; color: #888;">Explore my Web Artikel</p>
+                <a href="artikel/index.html" style="text-decoration: none; color: inherit;">
+                    <img src="img/gbr2.JPG" alt="Bookshelf Apps Image"
+                        style="width: 100%; height: auto; border-radius: 8px;">
+
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="skills-container">
+            <div class="project-item">
+                <h2 style="margin-top: 10px;">Web Coffe Animation</h2>
+                <p style="font-style: italic; color: #888;">Explore my Web Coffee</p>
+                <a href="coffee/index.html" style="text-decoration: none; color: inherit;">
+                    <img src="img/grb3.JPG" alt="Bookshelf Apps Image"
+                        style="width: 100%; height: auto; border-radius: 8px;">
+
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="skills-container">
+            <div class="project-item">
+                <h2 style="margin-top: 10px;">Web Product Card UI</h2>
+                <p style="font-style: italic; color: #888;">Explore my Web Product Card UI</p>
+                <a href="product card ui/index.html" style="text-decoration: none; color: inherit;">
+                    <img src="img/gbr4.JPG" alt="Bookshelf Apps Image"
+                        style="width: 100%; height: auto; border-radius: 8px;">
+
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="skills-container">
+            <div class="project-item">
+                <h2 style="margin-top: 10px;">Web Login Form</h2>
+                <p style="font-style: italic; color: #888;">Explore my Web Login Form </p>
+                <a href="login/indes.html" style="text-decoration: none; color: inherit;">
+                    <img src="img/gbr5.JPG" alt="Bookshelf Apps Image"
+                        style="width: 100%; height: auto; border-radius: 8px;">
+
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="skills-container">
+            <div class="project-item">
+                <h2 style="margin-top: 10px;">Web Filter Cards</h2>
+                <p style="font-style: italic; color: #888;">Explore my Web Filter Crads</p>
+                <a href="filtercards/index.html" style="text-decoration: none; color: inherit;">
+                    <img src="img/gbr6.JPG" alt="Bookshelf Apps Image"
+                        style="width: 100%; height: auto; border-radius: 8px;">
+
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M7b4YCx57h2LqU5oH4WUyeq3PXHBQ8Hdoy7h4z9x0D6"
+        crossorigin="anonymous"></script>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+    <footer>
+        <p>Contact information: michaelsinaga104@gmail.com</p>
+    </footer>
+</body>
+
+</html>
